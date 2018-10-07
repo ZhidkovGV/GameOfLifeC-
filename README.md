@@ -1,5 +1,5 @@
 # Task
-  **_Oh God! Small bugs broke my Game of Life! Hurry up, find them all!_** 
+  **_Oh Godness! Small bugs broke my Game of Life! Hurry up, catch them all!_** 
     
   **Note: Use debug mode. It will help a lot.**  
     
