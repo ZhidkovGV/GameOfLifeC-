@@ -7,4 +7,4 @@
     
   **Note: Also if you use Visual Studio you should pass "CLS" to system, not "clear".** 
     
-   Good luck and have fun. Also repository include some presets of data to see great **POWER** of this game.  
+   Good luck and have fun. Also repository include some presets of data for you to see great **POWER** of this game.  
