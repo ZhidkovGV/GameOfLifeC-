@@ -1,7 +1,7 @@
 # Task
-  **_Oh God! Small bugs broke my Game of Life! Help Me plz!_** 
+  **_Oh God! Small bugs broke my Game of Life! Hurry up, find them all!_** 
     
-  **Note: use debug mode. It will help a lot.**  
+  **Note: Use debug mode. It will help a lot.**  
     
   **Note: If youre using Visual Studio you should include windows.h library instead of unistd.h and pass sleep function parameter as milliseconds.**
     
