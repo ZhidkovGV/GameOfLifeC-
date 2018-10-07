@@ -1,5 +1,5 @@
 # Task
-  **_Oh God! Small bug broke my game of life! Help Me plzz!_** 
+  **_Oh God! Small bugs broke my Game of Life! Help Me plz!_** 
     
   **Note: use debug mode. It will help a lot.**  
     
