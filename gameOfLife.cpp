@@ -40,8 +40,8 @@ void update_previous_state(int** matrix_to_update, int** current_state) {
     }
 }
 
-bool check_borders (int position, int hernya) {
-    return position + hernya > 0 && position + hernya < GLOBAL_LENGTH;
+bool check_borders (int position, int difference) {
+    return position + difference > 0 && position + difference < GLOBAL_LENGTH;
 }
 
 int count_neighbours (int x_position, int y_position, int** current_state) {
