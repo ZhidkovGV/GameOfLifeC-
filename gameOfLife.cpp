@@ -41,7 +41,7 @@ void update_previous_state(int** matrix_to_update, int** current_state) {
 }
 
 bool check_borders (int position, int difference) {
-    return position + difference > 0 && position + difference < GLOBAL_LENGTH;
+    return ((position + difference) >= 0) && ((position + difference) < GLOBAL_LENGTH);
 }
 
 int count_neighbours (int x_position, int y_position, int** current_state) {
@@ -49,7 +49,7 @@ int count_neighbours (int x_position, int y_position, int** current_state) {
     for (int i = -1; i < 2; i++) {
         for (int j = -1; j < 2; j++) {
             if (check_borders(x_position, i) && check_borders(y_position, j)) {
-                if (i != 0 && j != 0) {
+                if (!(i == 0 && j == 0)) {
                     neighbours += current_state[x_position + i][y_position + j];
                 }
             }
@@ -64,10 +64,10 @@ void apply_rules(int** new_state, int** prev_state) {
             int neighbours = count_neighbours(i, j, prev_state);
             if (neighbours < 2 || neighbours > 3) {
                 new_state[i][j] = 0;
-            } else if (prev_state[i][j] == 0 && neighbours == 3) {
+            } else if (neighbours == 3) {
                 new_state[i][j] = 1;
             } else {
-                new_state[i][j] = 1;
+                new_state[i][j] = prev_state[i][j];
             }
         }
     }
